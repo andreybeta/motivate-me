@@ -52,3 +52,8 @@ gem 'therubyracer', require: "v8"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'haml'
+gem 'haml-rails'
+gem 'bootstrap-sass'
+gem 'simple_form'
