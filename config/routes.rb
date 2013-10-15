@@ -1,7 +1,7 @@
 MotivateMe::Application.routes.draw do
   get "pages/home"
   get "pages/help"
-  #get "pages/about"
+  get "pages/about"
   resources :categories
 
   get "home/index"

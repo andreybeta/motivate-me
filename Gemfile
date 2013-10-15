@@ -7,8 +7,14 @@ gem 'rails', '4.0.0'
 #gem 'sqlite3'
 group :development do
   gem 'sqlite3'
+  
+  #gem 'capybara_rails'
 end
-
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'capybara'	
+end
 group :production do
   gem 'pg'
   gem 'rails_12factor', '0.0.2'
