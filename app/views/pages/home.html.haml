@@ -1,3 +1,5 @@
-=provide :title, "Home" 
-%h1 HOME
-%p Find me in app/views/pages/home.html.haml
+=provide :title, t("Home")
+.hero-unit 
+	%h1 Motivame
+	%h2 Welcome!
+	= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary"

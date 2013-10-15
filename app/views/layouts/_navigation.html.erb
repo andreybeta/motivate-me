@@ -1,8 +1,12 @@
 <%= link_to image_tag("smile1.png", :border => 0) + "Motivate-me", "/", :class => 'brand' %>
-<ul class="nav">  
-  <li>
-  	<%= link_to 'Categorias', categories_path %>
-  </li>
- 
-
+<ul class="nav">
+	<li>
+		<%= link_to t('Categories'), categories_path %>
+	</li>
+</ul>
+<ul class="nav pull-right">
+  <li><%= link_to t("Home"),    root_path %></li>
+  <li><%= link_to t("Help"),    help_path %></li>
+  <li><%= link_to t("Contact"),    contact_path %></li>
+  <li><%= link_to t("Sign in"), signup_path %></li>
 </ul>
