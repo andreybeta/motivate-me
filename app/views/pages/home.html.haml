@@ -1,5 +1,17 @@
-=provide :title, t("Home")
+=provide :title, "Home"
 .hero-unit 
-	%h1 Motivame
-	%h2 Welcome!
-	= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary"
+	%h1 Motivate <span style="color:red">Me</span>
+	-# %h2 Welcome!
+	-# %div{:style=>"float:left"}
+	.row
+		.span5
+			= image_tag("ppal_banner.jpg", alt: "banner")
+		.span5
+			%p Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas volutpat facilisis ante non vulputate. Integer ultrices facilisis pulvinar.
+			%p Vivamus risus velit, placerat at eros sit amet, rhoncus tempus magna. Aliquam in lacinia sapien. Curabitur lectus diam, dictum ac pharetra sit amet, mattis eleifend leo. Ut in tellus eu mauris feugiat ultricies ac in urna.
+
+		= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary ", style:"float:right"
+
+%p Vivamus risus velit, placerat at eros sit amet, rhoncus tempus magna. Aliquam in lacinia sapien. Curabitur lectus diam, dictum ac pharetra sit amet, mattis eleifend leo. Ut in tellus eu mauris feugiat ultricies ac in urna.
+%p Proin dignissim dolor vel mauris tristique, pellentesque porta magna iaculis. Aenean cursus, erat non tristique elementum, erat odio dignissim ligula, ut imperdiet justo nibh sit amet massa. Mauris ac tempor urna. Vestibulum in turpis enim. Aliquam eleifend ut felis vitae dapibus. Proin pharetra sagittis est et molestie.
+%p Suspendisse potenti. Mauris tempus, ante quis scelerisque pulvinar, nunc mauris malesuada diam, non laoreet mauris ligula a ligula.
