@@ -12,6 +12,7 @@ MotivateMe::Application.routes.draw do
   match '/signup',  to: 'users#new',      via: 'get'
   
   resources :categories
+  resources :users
 
   #get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.

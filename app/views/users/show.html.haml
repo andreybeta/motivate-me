@@ -1,0 +1,7 @@
+=provide :title, @user.name
+
+%h1.center
+	= gravatar_for @user
+	=@user.name
+= @user.name
+= @user.email

@@ -1,5 +1,17 @@
 =provide :title, 'Sign up'
 
 %h1 
-	=t("Sign up")
-%p Find me in app/views/users/new.html.haml
+	=t("Sign Up")
+
+= simple_form_for(@user) do |f|
+	= f.error_notification
+
+	.form-inputs
+		= f.input :name
+		= f.input :email
+		= f.input :password
+		= f.input :password_confirmation,label: "Confirmation"
+
+	.form-actions
+		-#= f.submit "Create my account", class:'btn btn-primary' 
+		= f.button :submit, "Create my Account", class:'btn-primary' 
