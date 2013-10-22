@@ -21,6 +21,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'	
   gem 'factory_girl_rails'
+  gem 'webrat'
 end
 group :production do
   gem 'pg'

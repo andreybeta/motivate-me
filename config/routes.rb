@@ -1,5 +1,5 @@
 MotivateMe::Application.routes.draw do
-  get "users/new"
+  #get "users/new"
   #get "pages/home"
   #get "pages/help"
   #get "pages/about"
@@ -9,10 +9,13 @@ MotivateMe::Application.routes.draw do
   match '/help',    to: 'pages#help',     via: 'get'
   match '/contact', to: 'pages#contact',  via: 'get'
 
-  match '/signup',  to: 'users#new',      via: 'get'
+  match '/signup',  to: 'users#new',        via: 'get'
+  match '/signin',  to: 'sessions#new',     via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
   
   resources :categories
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   #get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
